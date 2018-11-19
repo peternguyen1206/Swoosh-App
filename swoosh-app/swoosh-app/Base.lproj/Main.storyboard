@@ -56,9 +56,17 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.45405725270000002" green="1" blue="0.17981358659999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bgImage" destination="h4m-4G-yrO" id="U2I-7x-1Lr"/>
+                        <outlet property="findATeamLbl" destination="et2-WP-adw" id="O2D-t4-zhz"/>
+                        <outlet property="getStartedBtn" destination="1uS-ER-aqN" id="MHS-yy-Ozj"/>
+                        <outlet property="onGoingAllOutLbl" destination="WcB-s7-0Bs" id="x7f-ba-rh8"/>
+                        <outlet property="onGoingLbl" destination="KNb-v9-6SI" id="SK1-Pv-jlu"/>
+                        <outlet property="swoosh" destination="ovg-4o-PRz" id="as9-4X-iKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
