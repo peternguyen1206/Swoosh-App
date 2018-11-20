@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2A181F621A4391D00DD003B /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A181F521A4391D00DD003B /* LeagueVC.swift */; };
+		E2A181F821A4393300DD003B /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A181F721A4393300DD003B /* SkillVC.swift */; };
 		E2BA0FAB21A294800069B0F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0FAA21A294800069B0F0 /* AppDelegate.swift */; };
-		E2BA0FAD21A294800069B0F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0FAC21A294800069B0F0 /* ViewController.swift */; };
+		E2BA0FAD21A294800069B0F0 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0FAC21A294800069B0F0 /* WelcomeVC.swift */; };
 		E2BA0FB021A294800069B0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BA0FAE21A294800069B0F0 /* Main.storyboard */; };
 		E2BA0FB221A294820069B0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BA0FB121A294820069B0F0 /* Assets.xcassets */; };
 		E2BA0FB521A294820069B0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BA0FB321A294820069B0F0 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2A181F521A4391D00DD003B /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		E2A181F721A4393300DD003B /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		E2BA0FA721A294800069B0F0 /* swoosh-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swoosh-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BA0FAA21A294800069B0F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2BA0FAC21A294800069B0F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2BA0FAC21A294800069B0F0 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		E2BA0FAF21A294800069B0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2BA0FB121A294820069B0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BA0FB421A294820069B0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2A181F121A4384E00DD003B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2A181F221A4385700DD003B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0FAC21A294800069B0F0 /* WelcomeVC.swift */,
+				E2A181F521A4391D00DD003B /* LeagueVC.swift */,
+				E2A181F721A4393300DD003B /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E2BA0F9E21A294800069B0F0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		E2BA0FA921A294800069B0F0 /* swoosh-app */ = {
 			isa = PBXGroup;
 			children = (
-				E2BA0FBC21A294930069B0F0 /* ViewController */,
+				E2A181F221A4385700DD003B /* Controller */,
+				E2A181F121A4384E00DD003B /* Model */,
+				E2BA0FBC21A294930069B0F0 /* View */,
 				E2BA0FAA21A294800069B0F0 /* AppDelegate.swift */,
-				E2BA0FAC21A294800069B0F0 /* ViewController.swift */,
 				E2BA0FAE21A294800069B0F0 /* Main.storyboard */,
 				E2BA0FB121A294820069B0F0 /* Assets.xcassets */,
 				E2BA0FB321A294820069B0F0 /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = "swoosh-app";
 			sourceTree = "<group>";
 		};
-		E2BA0FBC21A294930069B0F0 /* ViewController */ = {
+		E2BA0FBC21A294930069B0F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E2BA0FBD21A294CB0069B0F0 /* Button.swift */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BA0FAD21A294800069B0F0 /* ViewController.swift in Sources */,
+				E2BA0FAD21A294800069B0F0 /* WelcomeVC.swift in Sources */,
+				E2A181F621A4391D00DD003B /* LeagueVC.swift in Sources */,
 				E2BA0FBE21A294CB0069B0F0 /* Button.swift in Sources */,
+				E2A181F821A4393300DD003B /* SkillVC.swift in Sources */,
 				E2BA0FAB21A294800069B0F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
